@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Сессия.Задание №5</title>
+</head>
+<body>
+
+<script>
+var str='user-data';
+function test(str){
+for (let i = 0; i < str.length; ++i){
+if (str[i] == '-'){ // Отделяем левую и правую части строки от символа, а потом соединяем
+str = str.slice(0, i) + str[i + 1].toUpperCase() + str.slice(i + 2);
+}
+}
+return str;
+}
+
+alert(str);
+alert(test(str));
+
+
+</script>
+</body>
+</html>
